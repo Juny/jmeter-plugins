@@ -36,7 +36,7 @@ public class ChartSettings implements Serializable {
     private boolean useRelativeTime = true;
     private boolean preventXAxisOverScaling = false;
     private int hideNonRepValLimit = -1;
-    private int maxPointPerRow = -1;
+    private int maxPointPerRow = 50;//默认的-1改成50
     private long forcedMaxY = -1;
     private boolean expendRows = false;
     //Chart type

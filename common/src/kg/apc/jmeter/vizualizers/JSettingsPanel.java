@@ -727,7 +727,7 @@ public class JSettingsPanel extends javax.swing.JPanel implements GraphRendererI
         if (jCheckBoxMaxPoints.isSelected()) {
             parent.getGraphPanelChart().getChartSettings().setMaxPointPerRow(getValueFromString((String) jComboBoxMaxPoints.getSelectedItem()));
         } else {
-            parent.getGraphPanelChart().getChartSettings().setMaxPointPerRow(-1);
+            parent.getGraphPanelChart().getChartSettings().setMaxPointPerRow(50);//默认的-1改成50
         }
         refreshGraphPreview();
     }//GEN-LAST:event_jCheckBoxMaxPointsActionPerformed
